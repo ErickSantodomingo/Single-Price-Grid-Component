@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+  --fontSize: 16px;
+  --fontFamily: "Karla";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--fontFamily);
+}
+main {
+  background-color: var(--lightGray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content {
+  width: 50rem;
+  -webkit-box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+}
+.text {
+  background-color: #fff;
+  padding: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.text h1 {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+.text p {
+  color: var(--grayishBlue);
+  line-height: 1.5rem;
+  font-size: var(--fontSize);
+  max-width: 55ch;
+  font-weight: 700;
+}
+.greenText {
+  color: var(--brightYellow) !important;
+  font-weight: 700;
+  font-size: 1.3rem !important;
+  margin: 0 0 1rem 0;
+}
+.specsSec {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.priceSec {
+  background-color: var(--cyan);
+  border-bottom-left-radius: 0.5rem;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+.priceSec h2 {
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+}
+.number {
+  font-size: 2rem;
+}
+.priceSec small {
+  color: var(--lightGray);
+  opacity: 0.8;
+}
+.priceSec p {
+  margin: 1rem 0 0 0;
+}
+.whyUsSec {
+  background-color: #4abebd;
+  padding: 2rem;
+  line-height: 1.7rem;
+  width: 100%;
+  border-bottom-right-radius: 0.5rem;
+}
+.whyUsSec p {
+  margin: 2rem 0 0 0;
+  max-width: 22ch;
+  color: var(--lightGray);
+}
+.ctaGreen {
+  font-weight: 700;
+  position: absolute;
+  background-color: var(--brightYellow);
+  color: #fff;
+  padding: 1rem 8rem;
+  bottom: 3rem;
+  left: 2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 81px -35px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 600px) {
+  .specsSec {
+    flex-direction: column;
+  }
+  .content {
+    width: 20rem;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+  .text p,
+  .priceSec p {
+    font-size: 1rem;
+  }
+  .greenText {
+    font-size: 1rem !important;
+  }
+  .priceSec {
+    border-radius: 0;
+    height: 15rem;
+    width: 100%;
+  }
+  .priceSec h2 {
+    font-size: 1.2rem;
+  }
+  .ctaGreen {
+    padding: 1rem 6rem;
+    bottom: 1rem;
+    left: 2rem;
+  }
+  .whyUsSec {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
